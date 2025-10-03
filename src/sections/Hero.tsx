@@ -71,6 +71,9 @@ const Hero = () => {
               id="button"
               text="See my Work"
             />
+            <span className="text-white-50 text-sm md:text-base">
+              🌍 Remote • 🔒 Security-First • 🤖 AI-Integrated
+            </span>
           </div>
         </header>
         {/*RIGHT: 3D MODEL */}
