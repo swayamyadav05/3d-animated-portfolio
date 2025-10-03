@@ -6,11 +6,10 @@ import { useRef } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const ShowcaseSection = () => {
-  const sectionRef = useRef(null);
-  const project1Ref = useRef(null);
-  const project2Ref = useRef(null);
-  const project3Ref = useRef(null);
-
+  const sectionRef = useRef<HTMLDivElement | null>(null);
+  const project1Ref = useRef<HTMLDivElement | null>(null);
+  const project2Ref = useRef<HTMLDivElement | null>(null);
+  const project3Ref = useRef<HTMLDivElement | null>(null);
   useGSAP(() => {
     const projects = [
       project1Ref.current,
