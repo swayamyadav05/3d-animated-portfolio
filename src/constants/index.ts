@@ -11,6 +11,17 @@ const words = [
   { text: "Concepts", imgPath: "/images/concepts.svg" },
 ];
 
+const heroWords = [
+  { text: "Secure", imgPath: "/images/secure.svg" },
+  { text: "Scalable", imgPath: "/images/growth.svg" },
+  { text: "Intelligent", imgPath: "/images/intelligent.svg" },
+  { text: "Reliable", imgPath: "/images/reliable.svg" },
+  { text: "Secure", imgPath: "/images/secure.svg" },
+  { text: "Scalable", imgPath: "/images/growth.svg" },
+  { text: "Intelligent", imgPath: "/images/intelligent.svg" },
+  { text: "Reliable", imgPath: "/images/reliable.svg" },
+];
+
 const navLinks = [
   {
     name: "Projects",
@@ -43,7 +54,6 @@ const navLinks = [
 
 const counterItems = [
   { value: 15, suffix: "+", label: "Production Projects" },
-  // { value: 5, suffix: "+", label: "Technologies Mastered" },
   { value: 100, suffix: "%", label: "Remote Work Success" },
   { value: 1, suffix: "", label: "Open Source Contribution" },
   { value: 101, suffix: "%", label: "Consistent Upskilling" },
@@ -190,6 +200,7 @@ const socialImgs = [
 
 export {
   words,
+  heroWords,
   abilities,
   logoIconsList,
   counterItems,
