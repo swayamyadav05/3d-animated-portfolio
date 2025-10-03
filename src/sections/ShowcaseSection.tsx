@@ -53,7 +53,7 @@ const ShowcaseSection = () => {
             <div className="image-wrapper">
               <img
                 src="/images/projectSecretDrop.png"
-                alt="SecrectDrop"
+                alt="SecretDrop"
               />
             </div>
             <div className="text-content">
