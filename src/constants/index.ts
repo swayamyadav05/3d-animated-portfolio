@@ -22,22 +22,49 @@ const heroWords = [
   { text: "Reliable", imgPath: "/images/reliable.svg" },
 ];
 
+// const navLinks = [
+//   {
+//     name: "Projects",
+//     link: "#projects",
+//   },
+//   {
+//     name: "Experience",
+//     link: "#experience",
+//   },
+//   {
+//     name: "Skills",
+//     link: "#skills",
+//   },
+//   {
+//     name: "Testimonials",
+//     link: "#testimonials",
+//   },
+// ];
+
 const navLinks = [
   {
     name: "Projects",
-    link: "#projects",
+    hash: "#projects",
   },
   {
     name: "Experience",
-    link: "#experience",
+    hash: "#experience",
   },
   {
     name: "Skills",
-    link: "#skills",
+    hash: "#skills",
+  },
+  {
+    name: "About",
+    hash: "#about",
   },
   {
     name: "Testimonials",
-    link: "#testimonials",
+    hash: "#testimonials",
+  },
+  {
+    name: "Contact",
+    hash: "#contact",
   },
 ];
 
