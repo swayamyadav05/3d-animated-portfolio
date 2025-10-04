@@ -98,17 +98,17 @@ const logoIconsList = [
 
 const abilities = [
   {
-    imgPath: "/images/security.png",
+    imgPath: "/images/security.svg",
     title: "Security-First Mindset",
     desc: "Building applications with cybersecurity principles from the ground up, ensuring robust and secure systems.",
   },
   {
-    imgPath: "/images/remote.png",
+    imgPath: "/images/remote.svg",
     title: "Remote Work Excellence",
     desc: "Proven track record of delivering high-quality work in fully remote, asynchronous environments.",
   },
   {
-    imgPath: "/images/learning.png",
+    imgPath: "/images/learning.svg",
     title: "Rapid Learning Ability",
     desc: "Transformed from self-taught foundations to professional developer through disciplined, focused learning.",
   },
@@ -176,11 +176,11 @@ const expCards = [
   },
 ];
 
-const expLogos = [
-  { name: "skillrank", imgPath: "/images/skillrank-logo.png" },
-  { name: "kiit", imgPath: "/images/kiit-logo.png" },
-  { name: "freelance", imgPath: "/images/freelance-logo.png" },
-];
+// const expLogos = [
+//   { name: "skillrank", imgPath: "/images/skillrank-logo.png" },
+//   { name: "kiit", imgPath: "/images/kiit-logo.png" },
+//   { name: "freelance", imgPath: "/images/freelance-logo.png" },
+// ];
 
 // Replace these with your actual testimonials
 const testimonials = [
@@ -232,7 +232,6 @@ export {
   logoIconsList,
   counterItems,
   expCards,
-  expLogos,
   testimonials,
   socialImgs,
   techStackIcons,
