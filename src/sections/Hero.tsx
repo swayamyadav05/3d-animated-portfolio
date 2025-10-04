@@ -34,7 +34,7 @@ const Hero = () => {
           <div className="flex flex-col gap-7">
             <div className="hero-text">
               <h1>
-                Shipping
+                Building
                 <span className="slide">
                   <span className="wrapper">
                     {heroWords.map((word, index) => (
@@ -52,16 +52,17 @@ const Hero = () => {
                   </span>
                 </span>
               </h1>
-              <h1>Full-Stack Solutions</h1>
-              <h1>From Concept to Deploy</h1>
+              <h1>Tech Systems</h1>
+              <h1>Before Breaking Them</h1>
             </div>
             <div className="text-white-50 md:text-xl relative z-10 pointer-events-none space-y-2">
               <p>
-                Hi, I'm Swayam—a remote-first engineer specializing in
+                Hi, I'm Swayam—a full-stack engineer who thinks like a
+                pentester,
               </p>
               <p>
-                AI-integrated backends and secure full-stack
-                applications.
+                building secure AI-integrated systems with
+                production-grade architecture.
               </p>
             </div>
 

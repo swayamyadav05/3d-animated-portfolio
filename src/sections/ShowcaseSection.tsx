@@ -71,9 +71,9 @@ const ShowcaseSection = () => {
           {/* RIGHT */}
           <div className="project-list-wrapper overflow-hidden">
             <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#908271]">
+              <div className="image-wrapper bg-[#2f5c65]">
                 <img
-                  src="/images/projectCivicSightWorkflow.png"
+                  src="/images/projectCivicSightWorkflow3.png"
                   alt="Civic Sight AI Platform"
                 />
               </div>
@@ -81,9 +81,9 @@ const ShowcaseSection = () => {
             </div>
 
             <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#a98d92]">
+              <div className="image-wrapper bg-[#5c657b]">
                 <img
-                  src="/images/projectEmplyeeManagement3.png"
+                  src="/images/projectEmplyeeManagement4.png"
                   alt="Employee Management System"
                 />
               </div>
