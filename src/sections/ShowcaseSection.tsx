@@ -58,13 +58,13 @@ const ShowcaseSection = () => {
             </div>
             <div className="text-content">
               <h2>
+                Anonymous feedback platform enabling honest
+                communication without sender metadata exposure
+              </h2>
+              <p className="text-white-50 md:text-xl">
                 Created a safe channel for unfiltered feedback for
                 creators, educators, and teams without compromising
                 sender anonymity.
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                Built a radically simple platform where users share a
-                public link to receive anonymous messages.
               </p>
             </div>
           </div>
