@@ -3,6 +3,9 @@ import TechIcon from "../components/Models/TechLogos/TechIcon";
 import TitleHeader from "../components/TitleHeader";
 import { techStackIcons } from "../constants";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const TechStack = () => {
   useGSAP(() => {
