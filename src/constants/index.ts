@@ -127,36 +127,48 @@ const techStackImgs = [
 ];
 
 const techStackIcons = [
+  // {
+  //   name: "Full-Stack Developer",
+  //   modelPath: "/models/nextjs.glb",
+  //   scale: 1,
+  //   rotation: [0, 0, 0],
+  // },
   {
     name: "Full-Stack Developer",
-    modelPath: "/models/nextjs.glb",
+    modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
     name: "Python Developer",
-    modelPath: "/models/python.glb",
+    modelPath: "/models/python-transformed.glb",
     scale: 0.8,
     rotation: [0, 0, 0],
   },
   {
     name: "Backend Developer",
-    modelPath: "/models/nodejs.glb",
+    modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Database Expert",
-    modelPath: "/models/mongodb.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
+    name: "Project Manager",
+    modelPath: "/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
   },
-  {
-    name: "Cloud & DevOps",
-    modelPath: "/models/aws.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
+  // {
+  //   name: "Database Design",
+  //   modelPath: "/models/mongodb.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
+  // {
+  //   name: "Cloud & DevOps",
+  //   modelPath: "/models/aws.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
 ];
 
 const expCards = [
@@ -166,25 +178,11 @@ const expCards = [
     imgPath: "/images/skillrank_logo.svg",
     logoPath: "/images/skillrank_sr.svg",
     title: "Software Development Intern - SkillRank",
-    date: "October 2024 - April 2025",
+    date: "November 2024 - May 2025",
     responsibilities: [
       "Engineered CivicSight AI platform processing 100+ complex PDFs weekly with 95% data accuracy",
-      "Developed Neo4j-Expert-Agent tool recognized by AGNO framework for potential merger",
-      "Built automated data pipelines using AWS Lambda, eliminating manual data processing",
-      "Created reusable components for real estate app serving 200+ daily users",
-    ],
-  },
-  {
-    review:
-      "Swayam demonstrated exceptional ability to rapidly learn and contribute to complex AI-driven platforms. His work on our CivicSight AI was production-ready and showed deep understanding of both backend systems and AI tooling.",
-    imgPath: "/images/skillrank_logo.svg",
-    logoPath: "/images/skillrank_sr.svg",
-    title: "Software Development Intern - SkillRank",
-    date: "October 2024 - April 2025",
-    responsibilities: [
-      "Engineered CivicSight AI platform processing 100+ complex PDFs weekly with 95% data accuracy",
-      "Developed Neo4j-Expert-Agent tool recognized by AGNO framework for potential merger",
-      "Built automated data pipelines using AWS Lambda, eliminating manual data processing",
+      "Designed innovative agentic workflow using AGNO framework, recommended for platform-wide migration",
+      "Built schema-aware Neo4j-LLM integration toolkit, later contributed to AGNO open-source framework",
       "Created reusable components for real estate app serving 200+ daily users",
     ],
   },
