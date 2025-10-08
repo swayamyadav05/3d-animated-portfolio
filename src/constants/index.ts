@@ -162,9 +162,23 @@ const techStackIcons = [
 const expCards = [
   {
     review:
-      "Swayam demonstrated exceptional ability to rapidly learn and contribute to complex AI-driven platforms. His work on our Neo4j integration was production-ready and showed deep understanding of both backend systems and AI tooling.",
-    imgPath: "/images/skillrank-exp.png",
-    logoPath: "/images/skillrank-logo.png",
+      "Swayam demonstrated exceptional ability to rapidly learn and contribute to complex AI-driven platforms. His work on our CivicSight AI was production-ready and showed deep understanding of both backend systems and AI tooling.",
+    imgPath: "/images/skillrank_logo.svg",
+    logoPath: "/images/skillrank_sr.svg",
+    title: "Software Development Intern - SkillRank",
+    date: "October 2024 - April 2025",
+    responsibilities: [
+      "Engineered CivicSight AI platform processing 100+ complex PDFs weekly with 95% data accuracy",
+      "Developed Neo4j-Expert-Agent tool recognized by AGNO framework for potential merger",
+      "Built automated data pipelines using AWS Lambda, eliminating manual data processing",
+      "Created reusable components for real estate app serving 200+ daily users",
+    ],
+  },
+  {
+    review:
+      "Swayam demonstrated exceptional ability to rapidly learn and contribute to complex AI-driven platforms. His work on our CivicSight AI was production-ready and showed deep understanding of both backend systems and AI tooling.",
+    imgPath: "/images/skillrank_logo.svg",
+    logoPath: "/images/skillrank_sr.svg",
     title: "Software Development Intern - SkillRank",
     date: "October 2024 - April 2025",
     responsibilities: [
@@ -433,7 +447,7 @@ export {
 //     longDescription:
 //       "Enterprise-grade system processing 100+ planning PDFs weekly to generate Master Plan Update Documents (MPUDs) using AI and multi-source document parsing.",
 //     imgPath: "/images/projects/civicsight.png",
-//     liveLink: null,
+//     liveLink: "https://skillrank.io/Solutions/civic-sight",
 //     githubLink:
 //       "https://github.com/swayamyadav05/Civic-sight-AI-workflow",
 //     technologies: [
