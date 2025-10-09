@@ -13,6 +13,11 @@ const Contact = () => {
 
   const [loading, setLoading] = useState(false);
 
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -26,16 +31,26 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setSubmitStatus({ type: null, message: "" });
 
     try {
       if (!formRef.current) {
         throw new Error("Form reference is null");
       }
+      const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+
+      if (!serviceId || !templateId || !publicKey) {
+        throw new Error(
+          "EmailJS configuration is missing. Please check environment variables."
+        );
+      }
       await emailjs.sendForm(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         formRef.current,
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        publicKey
       );
 
       setFormData({
@@ -43,8 +58,17 @@ const Contact = () => {
         email: "",
         message: "",
       });
+
+      setSubmitStatus({
+        type: "success",
+        message: "Message sent successfully!",
+      });
     } catch (error) {
       console.log("EMAILJS ERROR,", error);
+      setSubmitStatus({
+        type: "error",
+        message: "Failed to send message. Please try again",
+      });
     } finally {
       setLoading(false);
     }
@@ -67,7 +91,7 @@ const Contact = () => {
                 className="w-full h-full flex flex-col gap-7"
                 ref={formRef}>
                 <div>
-                  <label htmlFor="name">Name</label>
+                  <label htmlFor="name">Your name</label>
                   <input
                     type="text"
                     id="name"
@@ -80,6 +104,7 @@ const Contact = () => {
                 </div>
 
                 <div>
+                  <label htmlFor="email">Your email</label>
                   <input
                     type="email"
                     id="email"
@@ -92,6 +117,7 @@ const Contact = () => {
                 </div>
 
                 <div>
+                  <label htmlFor="message">Your message</label>
                   <textarea
                     id="message"
                     name="message"
@@ -115,6 +141,16 @@ const Contact = () => {
                   </div>
                 </button>
               </form>
+              {submitStatus.type && (
+                <div
+                  className={`mt-4 p-3 rounded ${
+                    submitStatus.type === "success"
+                      ? "bg-green-100 text-green-800"
+                      : "bg-red-100 text-red-800"
+                  }`}>
+                  {submitStatus.message}
+                </div>
+              )}
             </div>
           </div>
 

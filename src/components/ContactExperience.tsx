@@ -3,19 +3,6 @@ import { OrbitControls, useGLTF } from "@react-three/drei";
 import { Suspense } from "react";
 import { Computer } from "./Models/Computer-optimized";
 
-// const ComputerModel = () => {
-//   const { scene } = useGLTF("/models/computer-optimized.glb");
-
-//   return (
-//     <primitive
-//       object={scene}
-//       scale={1}
-//       position={[0, 0, 0]}
-//       rotation={[0.1, 0, 0]}
-//     />
-//   );
-// };
-
 const ContactExperience: React.FC = () => {
   return (
     <Canvas
@@ -62,6 +49,6 @@ const ContactExperience: React.FC = () => {
 };
 
 // Preload the model
-useGLTF.preload("/models/computer-optimized.glb");
+useGLTF.preload("/models/computer-optimized-transformed.glb");
 
 export default ContactExperience;
