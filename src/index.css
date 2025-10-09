@@ -320,6 +320,11 @@ section {
       }
     }
   }
+
+  /* Testimonial avatar size (match client1.png reference) */
+  .testimonial-img {
+    @apply w-14 h-14 rounded-full object-cover;
+  }
 }
 
 /* Hero text slider starts */
@@ -454,6 +459,7 @@ section {
   mask-clip: padding-box, border-box;
   opacity: 0;
   transition: 0.5s ease;
+  pointer-events: none;
 }
 
 .glow {
