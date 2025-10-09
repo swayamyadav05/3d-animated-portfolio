@@ -194,28 +194,39 @@ const expCards = [
 //   { name: "freelance", imgPath: "/images/freelance-logo.png" },
 // ];
 
-// Replace these with your actual testimonials
 const testimonials = [
   {
-    name: "Your Manager at SkillRank",
-    mentions: "Engineering Manager",
+    id: "unik-dahal",
+    name: "Er. Unik Dahal",
+    role: "Product Engineer",
+    linkedIn: "https://www.linkedin.com/in/unikdahal/",
+    mentions: "@unikdahal",
+    company: "High Radius",
     review:
-      "Swayam quickly adapted to our tech stack and made significant contributions to our AI platform. His Neo4j integration work was particularly impressive and showed great problem-solving skills.",
-    imgPath: "/images/manager1.png",
+      "Watching Swayam's evolution has been remarkable. He started with ambitious dreams but needed direction—navigating uncertainty during his mid-college years. But then something shifted. He became intentional, focused, and driven with unwavering clarity. His transformation from finding his way to confidently owning his path is inspiring. He's evolved into someone who leads through excellence, not just effort.",
+    imgPath: "/images/unik_image.jpg",
   },
   {
-    name: "Project Collaborator",
-    mentions: "Team Lead",
+    id: "vishnu-sharma",
+    name: "Manager at SkillRank",
+    mentions: "@vishnuprasadsharma",
+    company: "SkillRank",
+    linkedIn:
+      "https://www.linkedin.com/in/vishnu-prasad-sharma-629a642b/",
     review:
-      "Working with Swayam was fantastic. He brings a unique blend of technical skill and creative problem-solving. His security-focused approach to development is a valuable asset to any team.",
-    imgPath: "/images/collaborator1.png",
+      "Swayam consistently delivered impressive work. Even when he needed to prioritize personal commitments, he communicated transparently. The trust he built with our team was remarkable, and his technical contributions—especially the AGNO-based architecture—significantly influenced our platform's future direction.",
+    imgPath: "/images/vishnu_image.jpg",
   },
   {
-    name: "Mentor/Professor",
-    mentions: "Technical Advisor",
+    id: "chethan-p",
+    name: "Er. Chethan P",
+    role: "Former SDE Intern",
+    linkedIn: "https://www.linkedin.com/in/chethan-p-671812245/",
+    mentions: "@chetanp",
+    company: "SkillRank",
     review:
-      "Swayam's journey from self-taught developer to professional is remarkable. His discipline and rapid learning ability are exceptional. He consistently delivers high-quality, production-ready code.",
-    imgPath: "/images/mentor1.png",
+      "Working alongside Swayam during the CivicSight project was excellent. He was instrumental in making my onboarding seamless and always available to help. His calm demeanor, approachability, and patience made it easy to ask questions without hesitation. He thoroughly addressed every concern and created a collaborative environment where learning felt natural. That's rare to find.",
+    imgPath: "/images/chethan_image.jpg",
   },
 ];
 
