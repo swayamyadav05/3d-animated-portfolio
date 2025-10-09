@@ -196,6 +196,7 @@ const expCards = [
 
 const testimonials = [
   {
+    id: "unik-dahal",
     name: "Er. Unik Dahal",
     role: "Product Engineer",
     linkedIn: "https://www.linkedin.com/in/unikdahal/",
@@ -206,8 +207,10 @@ const testimonials = [
     imgPath: "/images/unik_image.jpg",
   },
   {
+    id: "vishnu-sharma",
     name: "Manager at SkillRank",
     mentions: "@vishnuprasadsharma",
+    company: "SkillRank",
     linkedIn:
       "https://www.linkedin.com/in/vishnu-prasad-sharma-629a642b/",
     review:
@@ -215,7 +218,8 @@ const testimonials = [
     imgPath: "/images/vishnu_image.jpg",
   },
   {
-    name: "Er. Chetan P",
+    id: "chethan-p",
+    name: "Er. Chethan P",
     role: "Former SDE Intern",
     linkedIn: "https://www.linkedin.com/in/chethan-p-671812245/",
     mentions: "@chetanp",
