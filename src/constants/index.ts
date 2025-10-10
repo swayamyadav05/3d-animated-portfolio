@@ -196,17 +196,6 @@ const expCards = [
 
 const testimonials = [
   {
-    id: "unik-dahal",
-    name: "Er. Unik Dahal",
-    role: "Product Engineer",
-    linkedIn: "https://www.linkedin.com/in/unikdahal/",
-    mentions: "@unikdahal",
-    company: "High Radius",
-    review:
-      "Watching Swayam's evolution has been remarkable. He started with ambitious dreams but needed direction—navigating uncertainty during his mid-college years. But then something shifted. He became intentional, focused, and driven with unwavering clarity. His transformation from finding his way to confidently owning his path is inspiring. He's evolved into someone who leads through excellence, not just effort.",
-    imgPath: "/images/unik_image.jpg",
-  },
-  {
     id: "vishnu-sharma",
     name: "Manager at SkillRank",
     mentions: "@vishnuprasadsharma",
@@ -214,7 +203,7 @@ const testimonials = [
     linkedIn:
       "https://www.linkedin.com/in/vishnu-prasad-sharma-629a642b/",
     review:
-      "Swayam consistently delivered impressive work. Even when he needed to prioritize personal commitments, he communicated transparently. The trust he built with our team was remarkable, and his technical contributions—especially the AGNO-based architecture—significantly influenced our platform's future direction.",
+      "Swayam consistently delivered impressive work. Even when he needed to prioritize personal commitments, he communicated transparently. The trust he built with our team was remarkable, and his technical contributions—especially the AGNO-based architecture—significantly influenced our project's future direction.",
     imgPath: "/images/vishnu_image.jpg",
   },
   {
@@ -228,23 +217,34 @@ const testimonials = [
       "Working alongside Swayam during the CivicSight project was excellent. He was instrumental in making my onboarding seamless and always available to help. His calm demeanor, approachability, and patience made it easy to ask questions without hesitation. He thoroughly addressed every concern and created a collaborative environment where learning felt natural. That's rare to find.",
     imgPath: "/images/chethan_image.jpg",
   },
+  {
+    id: "unik-dahal",
+    name: "Er. Unik Dahal",
+    role: "Product Engineer",
+    linkedIn: "https://www.linkedin.com/in/unikdahal/",
+    mentions: "@unikdahal",
+    company: "High Radius",
+    review:
+      "Watching Swayam's evolution has been remarkable. He started with ambitious dreams but needed direction—navigating uncertainty during his mid-college years. But then something shifted. He became intentional, focused, and driven with unwavering clarity. His transformation from finding his way to confidently owning his path is inspiring. He's evolved into someone who leads through excellence, not just effort.",
+    imgPath: "/images/unik_image.jpg",
+  },
 ];
 
 const socialImgs = [
-  {
-    name: "github",
-    url: "https://github.com/swayamyadav05",
-    imgPath: "/images/github.png",
-  },
   {
     name: "linkedin",
     url: "https://linkedin.com/in/swayamyadav05",
     imgPath: "/images/linkedin.png",
   },
   {
-    name: "email",
-    url: "mailto:swayam.2956work@gmail.com",
-    imgPath: "/images/email.png",
+    name: "github",
+    url: "https://github.com/swayamyadav05",
+    imgPath: "/images/github-white-icon.png",
+  },
+  {
+    name: "instagram",
+    url: "https://www.instagram.com/swayamyadav_/",
+    imgPath: "/images/insta.png",
   },
 ];
 
