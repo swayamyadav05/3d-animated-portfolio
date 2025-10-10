@@ -93,7 +93,11 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
               )}
             </div>
 
-            <h2 className="mb-4">{project.description}</h2>
+            <h2 className="mb-4">{project.title}</h2>
+
+            <p className="text-white-50 md:text-2xl font-semibold mb-4">
+              {project.description}
+            </p>
 
             <p className="text-white-50 md:text-xl mb-6">
               {project.impact}

@@ -519,7 +519,7 @@ const projects = [
       "Schema-aware toolkit for LLM-Neo4j integration, merged into AGNO framework",
     longDescription:
       "Built as POC during internship, this tool provides AI agents with structured access to Neo4j graph databases, enabling context-aware queries.",
-    imgPath: "images/projectNeo4jAgent.png",
+    imgPath: "/images/projectNeo4jAgent.png",
     liveLink: "https://github.com/agno-agi/agno/pull/3889",
     githubLink: "https://github.com/swayamyadav05/Neo4j-Expert-Agent",
     technologies: ["Python", "Neo4j", "LLMs", "AGNO"],
