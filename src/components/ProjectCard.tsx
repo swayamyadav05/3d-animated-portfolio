@@ -54,7 +54,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
             />
 
             {/* Overlay with links */}
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 [&:not(:hover)]:pointer-events-none">
               {project.liveLink && (
                 <button
                   onClick={handleLiveClick}
@@ -105,9 +105,9 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
 
             {/* Technology Tags */}
             <div className="flex flex-wrap gap-2 mb-6">
-              {project.technologies.slice(0, 4).map((tech) => (
+              {project.technologies.slice(0, 4).map((tech, index) => (
                 <span
-                  key={tech}
+                  key={`${tech}-${index}`}
                   className="px-2 py-1 bg-black-200 text-white-50 text-xs rounded border border-black-50">
                   {tech}
                 </span>
@@ -121,7 +121,8 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
 
             {/* Action Button */}
             <div className="flex gap-4">
-              <a
+              <button
+                type="button"
                 onClick={(e) => {
                   e.preventDefault();
                   // Scroll to more projects section
@@ -141,7 +142,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
                     <img src="/images/arrow-down.svg" alt="arrow" />
                   </div>
                 </div>
-              </a>
+              </button>
             </div>
           </div>
         </div>
