@@ -114,7 +114,7 @@ const MoreProjects: React.FC = () => {
       id="more-projects"
       ref={sectionRef}
       className="w-full padding-x-lg md:mt-40 mt-20">
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto">
         {/* Section Header */}
         <div className="more-projects-header text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">

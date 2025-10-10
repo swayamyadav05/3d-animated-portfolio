@@ -188,8 +188,8 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           </div>
         </div>
 
-        <div className="mt-5">
-          <div className="flex flex-wrap gap-2 mb-3">
+        <div className="mt-2">
+          <div className="flex flex-wrap gap-2 mb-0">
             <span className="px-2 py-1 bg-white/10 text-white-50 text-xs rounded">
               {project.category}
             </span>
@@ -204,7 +204,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           </p>
 
           {/* Technology preview */}
-          <div className="flex flex-wrap gap-1 mt-3">
+          <div className="flex flex-wrap gap-1">
             {project.technologies.slice(0, 3).map((tech) => (
               <span
                 key={tech}
