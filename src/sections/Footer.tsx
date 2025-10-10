@@ -10,7 +10,7 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit my pirate-themed portfolio">
-            We have to live a life of no regrets.
+            "We have to live a life of no regrets."
           </a>
         </div>
         <div className="socials">
