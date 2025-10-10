@@ -7,7 +7,9 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-center md:items-start">
           <a
             href="https://swayam-pirate-portfolio.vercel.app/"
-            target="_blank">
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my pirate-themed portfolio">
             We have to live a life of no regrets.
           </a>
         </div>
@@ -16,9 +18,13 @@ const Footer = () => {
             <a
               className="icon"
               target="_blank"
+              rel="noopener noreferrer"
               href={img.url}
               key={img.url}>
-              <img src={img.imgPath} />
+              <img
+                src={img.imgPath}
+                alt={`${img.name} social link`}
+              />
             </a>
           ))}
         </div>
