@@ -260,6 +260,7 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };
 
 // const navLinks = [
@@ -414,177 +415,204 @@ export {
 //   },
 // ];
 
-// const projects = [
-//   {
-//     id: 1,
-//     title: "SecretDrop",
-//     category: "Full-Stack",
-//     featured: true,
-//     description:
-//       "Anonymous feedback platform enabling honest communication without sender metadata exposure",
-//     longDescription:
-//       "Built a secure anonymous messaging platform where users share public links to receive honest feedback. Features AI-powered message suggestions, toggle-based message control, and complete sender anonymity.",
-//     imgPath: "/images/projects/secretdrop.png",
-//     liveLink: "https://secret-drop-orpin.vercel.app/",
-//     githubLink: "https://github.com/swayamyadav05/SecretDrop",
-//     technologies: [
-//       "Next.js 15",
-//       "React 19",
-//       "TypeScript",
-//       "MongoDB",
-//       "Google Gemini AI",
-//       "NextAuth.js",
-//       "Tailwind CSS",
-//       "Zod",
-//     ],
-//     highlights: [
-//       "AI-powered contextual message suggestions without exposing sender identity",
-//       "Secure OTP-based authentication with session management",
-//       "Type-safe development with comprehensive validation",
-//       "Email automation with React Email templates",
-//     ],
-//     impact:
-//       "Created safe channel for unfiltered feedback for creators, educators, and teams",
-//   },
-//   {
-//     id: 2,
-//     title: "Civic Sight AI",
-//     category: "AI/Backend",
-//     featured: true,
-//     description:
-//       "LLM-based government platform automating urban planning document generation",
-//     longDescription:
-//       "Enterprise-grade system processing 100+ planning PDFs weekly to generate Master Plan Update Documents (MPUDs) using AI and multi-source document parsing.",
-//     imgPath: "/images/projects/civicsight.png",
-//     liveLink: "https://skillrank.io/Solutions/civic-sight",
-//     githubLink:
-//       "https://github.com/swayamyadav05/Civic-sight-AI-workflow",
-//     technologies: [
-//       "Python",
-//       "FastAPI",
-//       "AWS Textract",
-//       "MongoDB",
-//       "Neo4j",
-//       "Milvus",
-//       "Docker",
-//       "AGNO",
-//       "PyMuPDF",
-//     ],
-//     highlights: [
-//       "95% data accuracy across multi-source document parsing",
-//       "30% improvement in approval consistency through rule engine",
-//       "80% reduction in database load via intelligent caching",
-//       "POC architecture recommended for 100K+ LOC migration",
-//     ],
-//     impact:
-//       "Automated tedious manual review process, enabling faster urban planning decisions",
-//   },
-//   {
-//     id: 3,
-//     title: "Employee Management System",
-//     category: "Backend",
-//     featured: true,
-//     description:
-//       "Production-grade REST API with role-based access control and task management",
-//     longDescription:
-//       "Complete backend system demonstrating enterprise-level architecture with JWT authentication, CRUD operations, and collaborative features.",
-//     imgPath: "/images/projects/employee-mgmt.png",
-//     liveLink: null,
-//     githubLink:
-//       "https://github.com/swayamyadav05/90-days-web-dev/tree/main/projects/10_EmployeeManagementSystem/backend",
-//     technologies: [
-//       "Node.js",
-//       "Express",
-//       "MongoDB",
-//       "JWT",
-//       "bcryptjs",
-//       "Mongoose",
-//     ],
-//     highlights: [
-//       "Role-based access control (Admin/Employee)",
-//       "Advanced task filtering and statistics",
-//       "Collaborative commenting system",
-//       "Comprehensive validation and error handling",
-//     ],
-//     impact:
-//       "Demonstrated ability to architect scalable, secure backend systems from scratch",
-//   },
-//   {
-//     id: 4,
-//     title: "Neo4j-Expert-Agent",
-//     category: "AI/Open Source",
-//     featured: false,
-//     description:
-//       "Schema-aware toolkit for LLM-Neo4j integration, merged into AGNO framework",
-//     longDescription:
-//       "Built as POC during internship, this tool provides AI agents with structured access to Neo4j graph databases, enabling context-aware queries.",
-//     imgPath: "/images/projects/neo4j-agent.png",
-//     liveLink: null,
-//     githubLink: "https://github.com/swayamyadav05/Neo4j-Expert-Agent",
-//     technologies: ["Python", "Neo4j", "LLMs", "AGNO"],
-//     highlights: [
-//       "Merged into AGNO open-source framework",
-//       "Schema-aware query generation",
-//       "Context-preserving LLM integration",
-//     ],
-//     impact:
-//       "First open-source contribution, now used by AGNO community",
-//   },
-//   {
-//     id: 5,
-//     title: "FilmFiesta",
-//     category: "Full-Stack",
-//     featured: false,
-//     description:
-//       "Movie discovery platform with trending analytics and real-time search",
-//     longDescription:
-//       "React-based movie discovery app leveraging TMDB API with debounced search, trending section, and backend analytics using Appwrite.",
-//     imgPath: "/images/projects/filmfiesta.png",
-//     liveLink: "https://filmfiestaaa.vercel.app/",
-//     githubLink: "https://github.com/swayamyadav05/FilmFiesta",
-//     technologies: [
-//       "React",
-//       "Vite",
-//       "Tailwind CSS",
-//       "TMDB API",
-//       "Appwrite",
-//     ],
-//     highlights: [
-//       "Optimized API calls with debounced search",
-//       "Real-time trending movies tracking",
-//       "Clean, responsive UI",
-//     ],
-//     impact:
-//       "First full-stack application built during learning journey",
-//   },
-//   {
-//     id: 6,
-//     title: "AdTech Analytics Dashboard",
-//     category: "Backend/Cloud",
-//     featured: false,
-//     description:
-//       "ETL pipeline for Amazon Ads API with automated daily ingestion",
-//     longDescription:
-//       "Built backend infrastructure for ad campaign visualization with AWS Lambda scheduler for automated data fetching.",
-//     imgPath: "/images/projects/adtech.png",
-//     liveLink: null,
-//     githubLink: null,
-//     technologies: [
-//       "AWS Lambda",
-//       "Amazon RDS",
-//       "Amazon Ads API",
-//       "React",
-//       "CloudWatch",
-//     ],
-//     highlights: [
-//       "Automated daily metric ingestion (impressions, clicks)",
-//       "RESTful APIs for React dashboard",
-//       "Retry logic with CloudWatch alerts",
-//       "90% reduction in pipeline failures",
-//     ],
-//     impact:
-//       "Eliminated manual report downloads, improved data freshness to under 5 minutes",
-//   },
+const projects = [
+  {
+    id: 1,
+    title: "SecretDrop",
+    category: "Full-Stack",
+    featured: true,
+    description:
+      "Anonymous feedback platform enabling honest communication without sender metadata exposure",
+    longDescription:
+      "Built a secure anonymous messaging platform where users share public links to receive honest feedback. Features AI-powered message suggestions, toggle-based message control, and complete sender anonymity.",
+    imgPath: "/images/projectSecretDrop.png",
+    liveLink: "https://secret-drop-orpin.vercel.app/",
+    githubLink: "https://github.com/swayamyadav05/SecretDrop",
+    technologies: [
+      "Next.js 15",
+      "React 19",
+      "TypeScript",
+      "MongoDB",
+      "Google Gemini AI",
+      "NextAuth.js",
+      "Tailwind CSS",
+      "Zod",
+    ],
+    highlights: [
+      "AI-powered contextual message suggestions without exposing sender identity",
+      "Secure OTP-based authentication with session management",
+      "Type-safe development with comprehensive validation",
+      "Email automation with React Email templates",
+    ],
+    impact:
+      "Created safe channel for unfiltered feedback for creators, educators, and teams",
+  },
+  {
+    id: 2,
+    title: "Civic Sight AI",
+    category: "AI/Backend",
+    featured: true,
+    description:
+      "LLM-based government platform automating urban planning document generation",
+    longDescription:
+      "Enterprise-grade system processing 100+ planning PDFs weekly to generate Master Plan Update Documents (MPUDs) using AI and multi-source document parsing.",
+    imgPath: "/images/projectCivicSightWorkflow3.png",
+    liveLink: "https://skillrank.io/Solutions/civic-sight",
+    githubLink:
+      "https://github.com/swayamyadav05/Civic-sight-AI-workflow",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "AWS Textract",
+      "MongoDB",
+      "Neo4j",
+      "Milvus",
+      "Docker",
+      "AGNO",
+      "PyMuPDF",
+    ],
+    highlights: [
+      "95% data accuracy across multi-source document parsing",
+      "30% improvement in approval consistency through rule engine",
+      "80% reduction in database load via intelligent caching",
+      "POC architecture recommended for 100K+ LOC migration",
+    ],
+    impact:
+      "Automated tedious manual review process, enabling faster urban planning decisions",
+  },
+  {
+    id: 3,
+    title: "Employee Management System",
+    category: "Backend",
+    featured: true,
+    description:
+      "Production-grade REST API with role-based access control and task management",
+    longDescription:
+      "Complete backend system demonstrating enterprise-level architecture with JWT authentication, CRUD operations, and collaborative features.",
+    imgPath: "/images/projectEmplyeeManagement4.png",
+    liveLink: null,
+    githubLink:
+      "https://github.com/swayamyadav05/90-days-web-dev/tree/main/projects/10_EmployeeManagementSystem/backend",
+    technologies: [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "JWT",
+      "bcryptjs",
+      "Mongoose",
+    ],
+    highlights: [
+      "Role-based access control (Admin/Employee)",
+      "Advanced task filtering and statistics",
+      "Collaborative commenting system",
+      "Comprehensive validation and error handling",
+    ],
+    impact:
+      "Demonstrated ability to architect scalable, secure backend systems from scratch",
+  },
+  {
+    id: 4,
+    title: "Neo4j-Expert-Agent",
+    category: "AI/Open Source",
+    featured: false,
+    description:
+      "Schema-aware toolkit for LLM-Neo4j integration, merged into AGNO framework",
+    longDescription:
+      "Built as POC during internship, this tool provides AI agents with structured access to Neo4j graph databases, enabling context-aware queries.",
+    imgPath: "/images/projectNeo4jAgent.png",
+    liveLink: "https://github.com/agno-agi/agno/pull/3889",
+    githubLink: "https://github.com/swayamyadav05/Neo4j-Expert-Agent",
+    technologies: ["Python", "Neo4j", "LLMs", "AGNO"],
+    highlights: [
+      "Merged into AGNO open-source framework",
+      "Schema-aware query generation",
+      "Context-preserving LLM integration",
+    ],
+    impact:
+      "First open-source contribution, now used by AGNO community",
+  },
+  {
+    id: 5,
+    title: "FilmFiesta",
+    category: "Full-Stack",
+    featured: false,
+    description:
+      "Movie discovery platform with trending analytics and real-time search",
+    longDescription:
+      "React-based movie discovery app leveraging TMDB API with debounced search, trending section, and backend analytics using Appwrite.",
+    imgPath: "/images/filmfiesta.png",
+    liveLink: "https://filmfiestaaa.vercel.app/",
+    githubLink: "https://github.com/swayamyadav05/FilmFiesta",
+    technologies: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "TMDB API",
+      "Appwrite",
+    ],
+    highlights: [
+      "Optimized API calls with debounced search",
+      "Real-time trending movies tracking",
+      "Clean, responsive UI",
+    ],
+    impact:
+      "First full-stack application built during learning journey",
+  },
+  {
+    id: 6,
+    title: "Face Recognition Door Lock",
+    category: "IoT/Security",
+    featured: false,
+    description:
+      "Smart IoT security system with facial recognition authentication",
+    longDescription:
+      "IoT lab project combining hardware and ML for secure access control using facial recognition.",
+    imgPath: "/images/projectIotLockSys.png",
+    liveLink: null,
+    githubLink:
+      "https://github.com/swayamyadav05/Face_Recognition_System",
+    technologies: [
+      "Python",
+      "OpenCV",
+      "Raspberry Pi",
+      "Face Recognition",
+    ],
+    highlights: [
+      "Hardware-software integration",
+      "Real-time face detection and authentication",
+      "Security-focused design",
+    ],
+    impact: "Practical application of ML in IoT security context",
+  },
+  // {
+  //   id: 7,
+  //   title: "AdTech Analytics Dashboard",
+  //   category: "Backend/Cloud",
+  //   featured: false,
+  //   description:
+  //     "ETL pipeline for Amazon Ads API with automated daily ingestion",
+  //   longDescription:
+  //     "Built backend infrastructure for ad campaign visualization with AWS Lambda scheduler for automated data fetching.",
+  //   imgPath: "/images/project3.png",
+  //   liveLink: null,
+  //   githubLink: null,
+  //   technologies: [
+  //     "AWS Lambda",
+  //     "Amazon RDS",
+  //     "Amazon Ads API",
+  //     "React",
+  //     "CloudWatch",
+  //   ],
+  //   highlights: [
+  //     "Automated daily metric ingestion (impressions, clicks)",
+  //     "RESTful APIs for React dashboard",
+  //     "Retry logic with CloudWatch alerts",
+  //     "90% reduction in pipeline failures",
+  //   ],
+  //   impact:
+  //     "Eliminated manual report downloads, improved data freshness to under 5 minutes",
+  // },
+];
 //   {
 //     id: 7,
 //     title: "ASL Detection System",
@@ -611,32 +639,7 @@ export {
 //     impact:
 //       "Demonstrated understanding of ML pipelines and practical AI applications",
 //   },
-//   {
-//     id: 8,
-//     title: "Face Recognition Door Lock",
-//     category: "IoT/Security",
-//     featured: false,
-//     description:
-//       "Smart IoT security system with facial recognition authentication",
-//     longDescription:
-//       "IoT lab project combining hardware and ML for secure access control using facial recognition.",
-//     imgPath: "/images/projects/face-lock.png",
-//     liveLink: null,
-//     githubLink:
-//       "https://github.com/swayamyadav05/Face_Recognition_System",
-//     technologies: [
-//       "Python",
-//       "OpenCV",
-//       "Raspberry Pi",
-//       "Face Recognition",
-//     ],
-//     highlights: [
-//       "Hardware-software integration",
-//       "Real-time face detection and authentication",
-//       "Security-focused design",
-//     ],
-//     impact: "Practical application of ML in IoT security context",
-//   },
+
 // ];
 
 // const skills = {
@@ -805,4 +808,4 @@ export {
 //   testimonials,
 //   socialLinks,
 //   aboutMe,
-// };
+// }

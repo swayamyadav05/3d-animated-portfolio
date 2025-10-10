@@ -155,7 +155,7 @@ section {
   }
 
   .app-showcase {
-    @apply w-full mt-20 px-5 md:px-20 py-10 md:py-20 flex items-center justify-center;
+    @apply w-full h-full md:px-20 px-5 mt-20 flex items-center justify-center;
 
     .showcaselayout {
       @apply flex xl:flex-row flex-col gap-10 justify-between;
@@ -165,10 +165,10 @@ section {
       @apply h-full flex flex-col justify-between xl:w-[60%];
 
       .image-wrapper {
-        @apply xl:h-[70vh] md:h-[50vh] h-96 relative;
+        @apply xl:h-[70vh] md:h-[50vh] h-96 relative rounded-xl overflow-hidden;
 
         img {
-          @apply w-full h-full object-cover rounded-xl absolute inset-0;
+          @apply w-full h-full object-cover absolute inset-0;
         }
       }
 
@@ -513,4 +513,67 @@ section {
 .feature-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 30px rgba(229, 229, 229, 0.1);
+}
+
+/* Project Card Interactive Styles */
+.project-overlay-button {
+  @apply px-4 py-2 rounded-lg font-medium transition-all duration-300 flex items-center gap-2;
+}
+
+.project-overlay-button:hover {
+  @apply scale-105;
+}
+
+.project-tech-tag {
+  @apply px-2 py-1 text-xs rounded transition-all duration-300;
+}
+
+.project-tech-tag:hover {
+  @apply bg-white-50 text-black;
+}
+
+/* Project Card Hover Effects */
+.project-card-hover {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.project-card-hover:hover {
+  @apply transform -translate-y-1;
+}
+
+/* Line clamp utilities for project descriptions */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Badge hover effects */
+.project-badge {
+  @apply transition-all duration-300;
+}
+
+.project-badge:hover {
+  @apply bg-white text-black scale-105;
+}
+
+/* Smooth image transitions */
+.project-image-container {
+  @apply overflow-hidden rounded-xl;
+}
+
+.project-image-container img {
+  @apply transition-transform duration-500 ease-out;
+}
+
+.project-image-container:hover img {
+  @apply scale-110;
 }

@@ -2,6 +2,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
+import { projects } from "../constants";
+import ProjectCard from "../components/ProjectCard";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -48,49 +50,26 @@ const ShowcaseSection = () => {
     <section id="projects" ref={sectionRef} className="app-showcase">
       <div className="w-full">
         <div className="showcaselayout">
-          {/* LEFT */}
-          <div className="first-project-wrapper" ref={project1Ref}>
-            <div className="image-wrapper">
-              <img
-                src="/images/projectSecretDrop.png"
-                alt="SecretDrop"
-              />
-            </div>
-            <div className="text-content">
-              <h2>
-                Anonymous feedback platform enabling honest
-                communication without sender metadata exposure
-              </h2>
-              <p className="text-white-50 md:text-xl">
-                Created a safe channel for unfiltered feedback for
-                creators, educators, and teams without compromising
-                sender anonymity.
-              </p>
-            </div>
-          </div>
-          {/* RIGHT */}
-          <div className="project-list-wrapper overflow-hidden">
-            <div className="project" ref={project2Ref}>
-              <div className="image-wrapper bg-[#2f5c65]">
-                <img
-                  src="/images/projectCivicSightWorkflow3.png"
-                  alt="Civic Sight AI Platform"
-                />
-              </div>
-              <h2>CivicSight Agentic Workflow</h2>
-            </div>
+          {/* LEFT - Main Featured Project */}
+          <ProjectCard
+            project={projects[0]}
+            variant="main"
+            ref={project1Ref}
+          />
 
-            <div className="project" ref={project3Ref}>
-              <div className="image-wrapper bg-[#5c657b]">
-                <img
-                  src="/images/projectEmplyeeManagement4.png"
-                  alt="Employee Management System"
-                />
-              </div>
-              <h2>
-                Employee Management System | Production-Grade REST API
-              </h2>
-            </div>
+          {/* RIGHT - Side Projects */}
+          <div className="project-list-wrapper overflow-hidden">
+            <ProjectCard
+              project={projects[1]}
+              variant="side"
+              ref={project2Ref}
+            />
+
+            <ProjectCard
+              project={projects[2]}
+              variant="side"
+              ref={project3Ref}
+            />
           </div>
         </div>
       </div>
