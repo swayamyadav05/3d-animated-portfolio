@@ -232,19 +232,19 @@ const testimonials = [
 
 const socialImgs = [
   {
-    name: "github",
-    url: "https://github.com/swayamyadav05",
-    imgPath: "/images/github.png",
-  },
-  {
     name: "linkedin",
     url: "https://linkedin.com/in/swayamyadav05",
     imgPath: "/images/linkedin.png",
   },
   {
+    name: "github",
+    url: "https://github.com/swayamyadav05",
+    imgPath: "/images/github-white-icon.png",
+  },
+  {
     name: "email",
     url: "mailto:swayam.2956work@gmail.com",
-    imgPath: "/images/email.png",
+    imgPath: "/images/insta.png",
   },
 ];
 
