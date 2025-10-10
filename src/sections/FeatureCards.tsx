@@ -7,7 +7,7 @@ const FeatureCards = () => {
         {abilities.map(({ imgPath, title, desc }) => (
           <div
             key={title}
-            className="card-border rounded-xl p-8 flex flex-col gap-4">
+            className="feature-card card-border rounded-xl p-8 flex flex-col gap-4">
             <div className="size-14 flex items-center justify-center rounded-full">
               <img
                 src={imgPath}
