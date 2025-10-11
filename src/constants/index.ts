@@ -51,6 +51,10 @@ const navLinks = [
     hash: "#experience",
   },
   {
+    name: "Certifications",
+    hash: "#certifications",
+  },
+  {
     name: "Skills",
     hash: "#skills",
   },
@@ -125,295 +129,6 @@ const techStackImgs = [
   { name: "Cybersecurity", imgPath: "/images/logos/security.png" },
   { name: "Cloud & DevOps", imgPath: "/images/logos/aws.png" },
 ];
-
-const techStackIcons = [
-  // {
-  //   name: "Full-Stack Developer",
-  //   modelPath: "/models/nextjs.glb",
-  //   scale: 1,
-  //   rotation: [0, 0, 0],
-  // },
-  {
-    name: "Full-Stack Developer",
-    modelPath: "/models/react_logo-transformed.glb",
-    scale: 1,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Python Developer",
-    modelPath: "/models/python-transformed.glb",
-    scale: 0.8,
-    rotation: [0, 0, 0],
-  },
-  {
-    name: "Backend Developer",
-    modelPath: "/models/node-transformed.glb",
-    scale: 5,
-    rotation: [0, -Math.PI / 2, 0],
-  },
-  {
-    name: "Project Manager",
-    modelPath: "/models/git-svg-transformed.glb",
-    scale: 0.05,
-    rotation: [0, -Math.PI / 4, 0],
-  },
-  // {
-  //   name: "Database Design",
-  //   modelPath: "/models/mongodb.glb",
-  //   scale: 0.8,
-  //   rotation: [0, 0, 0],
-  // },
-  // {
-  //   name: "Cloud & DevOps",
-  //   modelPath: "/models/aws.glb",
-  //   scale: 0.8,
-  //   rotation: [0, 0, 0],
-  // },
-];
-
-const expCards = [
-  {
-    review:
-      "Swayam demonstrated exceptional ability to rapidly learn and contribute to complex AI-driven platforms. His work on our CivicSight AI was production-ready and showed deep understanding of both backend systems and AI tooling.",
-    imgPath: "/images/skillrank_logo.svg",
-    logoPath: "/images/skillrank_sr.svg",
-    title: "Software Development Intern - SkillRank",
-    date: "November 2024 - May 2025",
-    responsibilities: [
-      "Engineered CivicSight AI platform processing 100+ complex PDFs weekly with 95% data accuracy",
-      "Designed innovative agentic workflow using AGNO framework, recommended for platform-wide migration",
-      "Built schema-aware Neo4j-LLM integration toolkit, later contributed to AGNO open-source framework",
-      "Created reusable components for real estate app serving 200+ daily users",
-    ],
-  },
-];
-
-// const expLogos = [
-//   { name: "skillrank", imgPath: "/images/skillrank-logo.png" },
-//   { name: "kiit", imgPath: "/images/kiit-logo.png" },
-//   { name: "freelance", imgPath: "/images/freelance-logo.png" },
-// ];
-
-const testimonials = [
-  {
-    id: "vishnu-sharma",
-    name: "Manager at SkillRank",
-    mentions: "@vishnuprasadsharma",
-    company: "SkillRank",
-    linkedIn:
-      "https://www.linkedin.com/in/vishnu-prasad-sharma-629a642b/",
-    review:
-      "Swayam consistently delivered impressive work. Even when he needed to prioritize personal commitments, he communicated transparently. The trust he built with our team was remarkable, and his technical contributions—especially the AGNO-based architecture—significantly influenced our project's future direction.",
-    imgPath: "/images/vishnu_image.jpg",
-  },
-  {
-    id: "chethan-p",
-    name: "Er. Chethan P",
-    role: "Former SDE Intern",
-    linkedIn: "https://www.linkedin.com/in/chethan-p-671812245/",
-    mentions: "@chetanp",
-    company: "SkillRank",
-    review:
-      "Working alongside Swayam during the CivicSight project was excellent. He was instrumental in making my onboarding seamless and always available to help. His calm demeanor, approachability, and patience made it easy to ask questions without hesitation. He thoroughly addressed every concern and created a collaborative environment where learning felt natural. That's rare to find.",
-    imgPath: "/images/chethan_image.jpg",
-  },
-  {
-    id: "unik-dahal",
-    name: "Er. Unik Dahal",
-    role: "Product Engineer",
-    linkedIn: "https://www.linkedin.com/in/unikdahal/",
-    mentions: "@unikdahal",
-    company: "High Radius",
-    review:
-      "Watching Swayam's evolution has been remarkable. He started with ambitious dreams but needed direction—navigating uncertainty during his mid-college years. But then something shifted. He became intentional, focused, and driven with unwavering clarity. His transformation from finding his way to confidently owning his path is inspiring. He's evolved into someone who leads through excellence, not just effort.",
-    imgPath: "/images/unik_image.jpg",
-  },
-];
-
-const socialImgs = [
-  {
-    name: "linkedin",
-    url: "https://linkedin.com/in/swayamyadav05",
-    imgPath: "/images/linkedin.png",
-  },
-  {
-    name: "github",
-    url: "https://github.com/swayamyadav05",
-    imgPath: "/images/github-white-icon.png",
-  },
-  {
-    name: "instagram",
-    url: "https://www.instagram.com/swayamyadav_/",
-    imgPath: "/images/insta.png",
-  },
-];
-
-export {
-  words,
-  heroWords,
-  abilities,
-  logoIconsList,
-  counterItems,
-  expCards,
-  testimonials,
-  socialImgs,
-  techStackIcons,
-  techStackImgs,
-  navLinks,
-  projects,
-};
-
-// const navLinks = [
-//   {
-//     name: "Work",
-//     link: "#work",
-//   },
-//   {
-//     name: "Experience",
-//     link: "#experience",
-//   },
-//   {
-//     name: "Skills",
-//     link: "#skills",
-//   },
-//   {
-//     name: "About",
-//     link: "#about",
-//   },
-//   {
-//     name: "Contact",
-//     link: "#contact",
-//   },
-// ];
-
-// const heroWords = [
-//   { text: "Secure", imgPath: "/images/secure.svg" },
-//   { text: "Scalable", imgPath: "/images/scalable.svg" },
-//   { text: "Intelligent", imgPath: "/images/intelligent.svg" },
-//   { text: "Production-Ready", imgPath: "/images/production.svg" },
-//   { text: "Secure", imgPath: "/images/secure.svg" },
-//   { text: "Scalable", imgPath: "/images/scalable.svg" },
-//   { text: "Intelligent", imgPath: "/images/intelligent.svg" },
-//   { text: "Production-Ready", imgPath: "/images/production.svg" },
-// ];
-
-// const counterItems = [
-//   { value: 3, suffix: "+", label: "Production Applications Shipped" },
-//   { value: 15, suffix: "+", label: "Full-Stack Projects Built" },
-//   { value: 1, suffix: "", label: "Open Source Contribution" },
-//   { value: 101, suffix: "%", label: "Consistent Upskilling" },
-// ];
-
-// // Tech stack logos for companies/technologies worked with
-// const techLogos = [
-//   { imgPath: "/images/logos/skillrank.png", name: "SkillRank" },
-//   { imgPath: "/images/logos/aws.png", name: "AWS" },
-//   { imgPath: "/images/logos/mongodb.png", name: "MongoDB" },
-//   { imgPath: "/images/logos/nextjs.png", name: "Next.js" },
-//   { imgPath: "/images/logos/react.png", name: "React" },
-//   { imgPath: "/images/logos/python.png", name: "Python" },
-//   { imgPath: "/images/logos/fastapi.png", name: "FastAPI" },
-//   { imgPath: "/images/logos/nodejs.png", name: "Node.js" },
-//   { imgPath: "/images/logos/docker.png", name: "Docker" },
-//   { imgPath: "/images/logos/neo4j.png", name: "Neo4j" },
-//   { imgPath: "/images/logos/gemini.png", name: "Google Gemini" },
-// ];
-
-// const coreValues = [
-//   {
-//     imgPath: "/images/security.png",
-//     title: "Security-First Mindset",
-//     desc: "Building systems with penetration tester's perspective—thinking about edge cases, validation, and graceful failure.",
-//   },
-//   {
-//     imgPath: "/images/remote.png",
-//     title: "Remote-Ready Professional",
-//     desc: "Proven track record of delivering quality work in distributed environments with clear communication.",
-//   },
-//   {
-//     imgPath: "/images/learning.png",
-//     title: "Continuous Learner",
-//     desc: "Self-directed learning from documentation and building production projects to validate knowledge.",
-//   },
-// ];
-
-// // Primary tech stack with 3D models
-// const techStackIcons = [
-//   {
-//     name: "Full-Stack Developer",
-//     modelPath: "/models/react_logo-transformed.glb",
-//     scale: 1,
-//     rotation: [0, 0, 0],
-//   },
-//   {
-//     name: "Backend Engineer",
-//     modelPath: "/models/python-transformed.glb",
-//     scale: 0.8,
-//     rotation: [0, 0, 0],
-//   },
-//   {
-//     name: "AI Integration",
-//     modelPath: "/models/ai-transformed.glb",
-//     scale: 5,
-//     rotation: [0, -Math.PI / 2, 0],
-//   },
-//   {
-//     name: "Cloud Architecture",
-//     modelPath: "/models/cloud-transformed.glb",
-//     scale: 0.05,
-//     rotation: [0, 0, 0],
-//   },
-//   {
-//     name: "Database Design",
-//     modelPath: "/models/database-transformed.glb",
-//     scale: 0.05,
-//     rotation: [0, -Math.PI / 4, 0],
-//   },
-// ];
-
-// // Alternative: Tech stack with images
-// const techStackImgs = [
-//   {
-//     name: "Full-Stack Developer",
-//     imgPath: "/images/logos/fullstack.png",
-//   },
-//   {
-//     name: "Backend Engineer",
-//     imgPath: "/images/logos/backend.png",
-//   },
-//   {
-//     name: "AI Integration Specialist",
-//     imgPath: "/images/logos/ai.png",
-//   },
-//   {
-//     name: "Cloud Developer",
-//     imgPath: "/images/logos/cloud.png",
-//   },
-//   {
-//     name: "Security Conscious",
-//     imgPath: "/images/logos/security.png",
-//   },
-// ];
-
-// const workExperience = [
-//   {
-//     review:
-//       "Swayam demonstrated exceptional problem-solving skills and technical depth in building our AI-powered platform. His innovative agentic architecture approach significantly improved our codebase maintainability.",
-//     imgPath: "/images/skillrank-office.png",
-//     logoPath: "/images/skillrank-logo.png",
-//     title: "Backend Developer & AI Integration Specialist",
-//     company: "SkillRank",
-//     location: "Remote",
-//     date: "October 2024 - March 2025",
-//     responsibilities: [
-//       "Architected LLM-based document processing pipelines handling 100+ PDFs weekly with 95% accuracy",
-//       "Designed innovative agentic workflow using AGNO framework, recommended for platform-wide migration",
-//       "Built schema-aware Neo4j-LLM integration toolkit, later contributed to AGNO open-source framework",
-//       "Reduced database load by 80% through intelligent caching and optimized query patterns",
-//       "Improved approval consistency by 30% through enhanced Pydantic-based rule engine",
-//     ],
-//   },
-// ];
 
 const projects = [
   {
@@ -613,6 +328,367 @@ const projects = [
   //     "Eliminated manual report downloads, improved data freshness to under 5 minutes",
   // },
 ];
+
+const techStackIcons = [
+  // {
+  //   name: "Full-Stack Developer",
+  //   modelPath: "/models/nextjs.glb",
+  //   scale: 1,
+  //   rotation: [0, 0, 0],
+  // },
+  {
+    name: "Full-Stack Developer",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Python Developer",
+    modelPath: "/models/python-transformed.glb",
+    scale: 0.8,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "Backend Developer",
+    modelPath: "/models/node-transformed.glb",
+    scale: 5,
+    rotation: [0, -Math.PI / 2, 0],
+  },
+  {
+    name: "Project Manager",
+    modelPath: "/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, -Math.PI / 4, 0],
+  },
+  // {
+  //   name: "Database Design",
+  //   modelPath: "/models/mongodb.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
+  // {
+  //   name: "Cloud & DevOps",
+  //   modelPath: "/models/aws.glb",
+  //   scale: 0.8,
+  //   rotation: [0, 0, 0],
+  // },
+];
+
+const expCards = [
+  {
+    review:
+      "Swayam demonstrated exceptional ability to rapidly learn and contribute to complex AI-driven platforms. His work on our CivicSight AI was production-ready and showed deep understanding of both backend systems and AI tooling.",
+    imgPath: "/images/skillrank_logo.svg",
+    logoPath: "/images/skillrank_sr.svg",
+    title: "Software Development Intern - SkillRank",
+    date: "November 2024 - May 2025",
+    responsibilities: [
+      "Engineered CivicSight AI platform processing 100+ complex PDFs weekly with 95% data accuracy",
+      "Designed innovative agentic workflow using AGNO framework, recommended for platform-wide migration",
+      "Built schema-aware Neo4j-LLM integration toolkit, later contributed to AGNO open-source framework",
+      "Created reusable components for real estate app serving 200+ daily users",
+    ],
+  },
+];
+
+// const expLogos = [
+//   { name: "skillrank", imgPath: "/images/skillrank-logo.png" },
+//   { name: "kiit", imgPath: "/images/kiit-logo.png" },
+//   { name: "freelance", imgPath: "/images/freelance-logo.png" },
+// ];
+
+const testimonials = [
+  {
+    id: "vishnu-sharma",
+    name: "Manager at SkillRank",
+    mentions: "@vishnuprasadsharma",
+    company: "SkillRank",
+    linkedIn:
+      "https://www.linkedin.com/in/vishnu-prasad-sharma-629a642b/",
+    review:
+      "Swayam consistently delivered impressive work. Even when he needed to prioritize personal commitments, he communicated transparently. The trust he built with our team was remarkable, and his technical contributions—especially the AGNO-based architecture—significantly influenced our project's future direction.",
+    imgPath: "/images/vishnu_image.jpg",
+  },
+  {
+    id: "chethan-p",
+    name: "Er. Chethan P",
+    role: "Former SDE Intern",
+    linkedIn: "https://www.linkedin.com/in/chethan-p-671812245/",
+    mentions: "@chetanp",
+    company: "SkillRank",
+    review:
+      "Working alongside Swayam during the CivicSight project was excellent. He was instrumental in making my onboarding seamless and always available to help. His calm demeanor, approachability, and patience made it easy to ask questions without hesitation. He thoroughly addressed every concern and created a collaborative environment where learning felt natural. That's rare to find.",
+    imgPath: "/images/chethan_image.jpg",
+  },
+  {
+    id: "unik-dahal",
+    name: "Er. Unik Dahal",
+    role: "Product Engineer",
+    linkedIn: "https://www.linkedin.com/in/unikdahal/",
+    mentions: "@unikdahal",
+    company: "High Radius",
+    review:
+      "Watching Swayam's evolution has been remarkable. He started with ambitious dreams but needed direction—navigating uncertainty during his mid-college years. But then something shifted. He became intentional, focused, and driven with unwavering clarity. His transformation from finding his way to confidently owning his path is inspiring. He's evolved into someone who leads through excellence, not just effort.",
+    imgPath: "/images/unik_image.jpg",
+  },
+];
+
+const socialImgs = [
+  {
+    name: "linkedin",
+    url: "https://linkedin.com/in/swayamyadav05",
+    imgPath: "/images/linkedin.png",
+  },
+  {
+    name: "github",
+    url: "https://github.com/swayamyadav05",
+    imgPath: "/images/github-white-icon.png",
+  },
+  {
+    name: "instagram",
+    url: "https://www.instagram.com/swayamyadav_/",
+    imgPath: "/images/insta.png",
+  },
+];
+
+const certifications = [
+  {
+    title: "Python for Everybody Specialization",
+    description:
+      "Comprehensive Python programming and data analysis skills covering fundamentals to advanced concepts",
+    icon: "python",
+    date: "Jan 2024 - Mar 2024",
+    credentialUrl:
+      "https://coursera.org/share/b06674cef801b9176a148fc05940cd7f",
+    issuer: "University of Michigan (Coursera)",
+  },
+  {
+    title: "Google Cybersecurity Professional Certificate",
+    description:
+      "Completed 8 courses including Python, Linux, SQL, SIEM tools, and intrusion detection systems",
+    icon: "google",
+    date: "Feb 2024 - Jul 2024",
+    credentialUrl:
+      "https://coursera.org/share/be270bf37a5539c4f9e690c025fd20ae",
+    issuer: "Google (Coursera)",
+  },
+  {
+    title:
+      "Hands-on Introduction to Linux Commands and Shell Scripting",
+    description:
+      "Command line mastery and shell scripting expertise for system administration and development",
+    icon: "terminal",
+    date: "Sep 2024 - Oct 2024",
+    credentialUrl:
+      "https://coursera.org/share/7724857c8e1a2d8544601189b26730eb",
+    issuer: "IBM (Coursera)",
+  },
+  {
+    title: "Red Hat System Administration I (RH124)",
+    description:
+      "Certificate of Attendance from Red Hat Training and Certification for enterprise Linux administration",
+    icon: "redhat",
+    date: "Oct 2024 - Nov 2024",
+    credentialUrl: "/certificates/redhat-system-administration-I.pdf",
+    issuer: "Red Hat Training & Certification",
+  },
+  {
+    title: "Cybersecurity Virtual Internship",
+    description:
+      "Completed 10 weeks of intensive virtual internship supported by Palo Alto Networks and EduSkills",
+    icon: "briefcase",
+    date: "Oct 2024 - Dec 2024",
+    credentialUrl: "/certificates/eduskills-cybersecurity.pdf",
+    issuer: "EduSkills (Palo Alto Networks)",
+  },
+  {
+    title: "SkillRank Training Program",
+    description:
+      "Successfully completed 4 weeks of intensive training in full stack development with cutting edge technologies",
+    icon: "training",
+    date: "Oct 2024 - Nov 2024",
+    credentialUrl: "/certificates/skillrank-training.pdf",
+    issuer: "SkillRank",
+  },
+  {
+    title: "SkillRank Internship Program",
+    description:
+      "Successfully completed 6 months of hands-on skill development internship in production environments as SDE",
+    icon: "internship",
+    date: "Nov 2024 - May 2025",
+    credentialUrl: "/certificates/skillrank-internship.pdf",
+    issuer: "SkillRank",
+  },
+];
+
+export {
+  words,
+  heroWords,
+  abilities,
+  logoIconsList,
+  counterItems,
+  expCards,
+  testimonials,
+  socialImgs,
+  techStackIcons,
+  techStackImgs,
+  navLinks,
+  projects,
+  certifications,
+};
+
+// const navLinks = [
+//   {
+//     name: "Work",
+//     link: "#work",
+//   },
+//   {
+//     name: "Experience",
+//     link: "#experience",
+//   },
+//   {
+//     name: "Skills",
+//     link: "#skills",
+//   },
+//   {
+//     name: "About",
+//     link: "#about",
+//   },
+//   {
+//     name: "Contact",
+//     link: "#contact",
+//   },
+// ];
+
+// const heroWords = [
+//   { text: "Secure", imgPath: "/images/secure.svg" },
+//   { text: "Scalable", imgPath: "/images/scalable.svg" },
+//   { text: "Intelligent", imgPath: "/images/intelligent.svg" },
+//   { text: "Production-Ready", imgPath: "/images/production.svg" },
+//   { text: "Secure", imgPath: "/images/secure.svg" },
+//   { text: "Scalable", imgPath: "/images/scalable.svg" },
+//   { text: "Intelligent", imgPath: "/images/intelligent.svg" },
+//   { text: "Production-Ready", imgPath: "/images/production.svg" },
+// ];
+
+// const counterItems = [
+//   { value: 3, suffix: "+", label: "Production Applications Shipped" },
+//   { value: 15, suffix: "+", label: "Full-Stack Projects Built" },
+//   { value: 1, suffix: "", label: "Open Source Contribution" },
+//   { value: 101, suffix: "%", label: "Consistent Upskilling" },
+// ];
+
+// // Tech stack logos for companies/technologies worked with
+// const techLogos = [
+//   { imgPath: "/images/logos/skillrank.png", name: "SkillRank" },
+//   { imgPath: "/images/logos/aws.png", name: "AWS" },
+//   { imgPath: "/images/logos/mongodb.png", name: "MongoDB" },
+//   { imgPath: "/images/logos/nextjs.png", name: "Next.js" },
+//   { imgPath: "/images/logos/react.png", name: "React" },
+//   { imgPath: "/images/logos/python.png", name: "Python" },
+//   { imgPath: "/images/logos/fastapi.png", name: "FastAPI" },
+//   { imgPath: "/images/logos/nodejs.png", name: "Node.js" },
+//   { imgPath: "/images/logos/docker.png", name: "Docker" },
+//   { imgPath: "/images/logos/neo4j.png", name: "Neo4j" },
+//   { imgPath: "/images/logos/gemini.png", name: "Google Gemini" },
+// ];
+
+// const coreValues = [
+//   {
+//     imgPath: "/images/security.png",
+//     title: "Security-First Mindset",
+//     desc: "Building systems with penetration tester's perspective—thinking about edge cases, validation, and graceful failure.",
+//   },
+//   {
+//     imgPath: "/images/remote.png",
+//     title: "Remote-Ready Professional",
+//     desc: "Proven track record of delivering quality work in distributed environments with clear communication.",
+//   },
+//   {
+//     imgPath: "/images/learning.png",
+//     title: "Continuous Learner",
+//     desc: "Self-directed learning from documentation and building production projects to validate knowledge.",
+//   },
+// ];
+
+// // Primary tech stack with 3D models
+// const techStackIcons = [
+//   {
+//     name: "Full-Stack Developer",
+//     modelPath: "/models/react_logo-transformed.glb",
+//     scale: 1,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "Backend Engineer",
+//     modelPath: "/models/python-transformed.glb",
+//     scale: 0.8,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "AI Integration",
+//     modelPath: "/models/ai-transformed.glb",
+//     scale: 5,
+//     rotation: [0, -Math.PI / 2, 0],
+//   },
+//   {
+//     name: "Cloud Architecture",
+//     modelPath: "/models/cloud-transformed.glb",
+//     scale: 0.05,
+//     rotation: [0, 0, 0],
+//   },
+//   {
+//     name: "Database Design",
+//     modelPath: "/models/database-transformed.glb",
+//     scale: 0.05,
+//     rotation: [0, -Math.PI / 4, 0],
+//   },
+// ];
+
+// // Alternative: Tech stack with images
+// const techStackImgs = [
+//   {
+//     name: "Full-Stack Developer",
+//     imgPath: "/images/logos/fullstack.png",
+//   },
+//   {
+//     name: "Backend Engineer",
+//     imgPath: "/images/logos/backend.png",
+//   },
+//   {
+//     name: "AI Integration Specialist",
+//     imgPath: "/images/logos/ai.png",
+//   },
+//   {
+//     name: "Cloud Developer",
+//     imgPath: "/images/logos/cloud.png",
+//   },
+//   {
+//     name: "Security Conscious",
+//     imgPath: "/images/logos/security.png",
+//   },
+// ];
+
+// const workExperience = [
+//   {
+//     review:
+//       "Swayam demonstrated exceptional problem-solving skills and technical depth in building our AI-powered platform. His innovative agentic architecture approach significantly improved our codebase maintainability.",
+//     imgPath: "/images/skillrank-office.png",
+//     logoPath: "/images/skillrank-logo.png",
+//     title: "Backend Developer & AI Integration Specialist",
+//     company: "SkillRank",
+//     location: "Remote",
+//     date: "October 2024 - March 2025",
+//     responsibilities: [
+//       "Architected LLM-based document processing pipelines handling 100+ PDFs weekly with 95% accuracy",
+//       "Designed innovative agentic workflow using AGNO framework, recommended for platform-wide migration",
+//       "Built schema-aware Neo4j-LLM integration toolkit, later contributed to AGNO open-source framework",
+//       "Reduced database load by 80% through intelligent caching and optimized query patterns",
+//       "Improved approval consistency by 30% through enhanced Pydantic-based rule engine",
+//     ],
+//   },
+// ];
+
 //   {
 //     id: 7,
 //     title: "ASL Detection System",
@@ -686,30 +762,6 @@ const projects = [
 //     "TryHackMe",
 //   ],
 // };
-
-// const certifications = [
-//   {
-//     title: "Google Cybersecurity Professional Certificate",
-//     issuer: "Google (Coursera)",
-//     date: "2024",
-//     credentialLink: "#",
-//     imgPath: "/images/certs/google-cyber.png",
-//   },
-//   {
-//     title: "Python for Everybody Specialization",
-//     issuer: "University of Michigan (Coursera)",
-//     date: "2024",
-//     credentialLink: "#",
-//     imgPath: "/images/certs/python.png",
-//   },
-//   {
-//     title: "Junior Penetration Tester",
-//     issuer: "TryHackMe",
-//     date: "In Progress",
-//     credentialLink: "#",
-//     imgPath: "/images/certs/tryhackme.png",
-//   },
-// ];
 
 // const publications = [
 //   {
