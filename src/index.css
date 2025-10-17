@@ -254,6 +254,22 @@ section {
     @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
   }
 
+  .about-card-wrapper {
+    @apply flex flex-col gap-10 relative;
+  }
+
+  .about-timeline-wrapper {
+    @apply relative flex justify-center md:mr-10 mr-6;
+  }
+
+  .about-timeline {
+    @apply w-[3px] md:w-[5px] bg-gradient-to-b from-[#4ba4ff] via-[#a855f7] to-transparent rounded-full md:h-[140%] h-[120%] -mt-3 origin-top;
+  }
+
+  .about-timeline-card {
+    @apply flex flex-col md:flex-row items-start bg-transparent;
+  }
+
   .gradient-edge {
     @apply w-36 h-full absolute bottom-0 z-20;
   }
