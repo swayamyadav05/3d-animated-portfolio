@@ -28,11 +28,12 @@ const Certifications = () => {
         y: 50,
         opacity: 0,
         duration: 0.8,
-        delay: index * 0.2,
+        delay: index * 0.15,
         ease: "power2.out",
         scrollTrigger: {
           trigger: card as HTMLElement,
           start: "top 85%",
+          once: true,
         },
       });
     });
@@ -60,6 +61,7 @@ const Certifications = () => {
                     <img
                       src={getIconComponent(cert.icon)}
                       alt={cert.title}
+                      loading="lazy"
                       className={`object-contain ${
                         cert.icon === "redhat"
                           ? "w-12 h-12"

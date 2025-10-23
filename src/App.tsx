@@ -18,8 +18,8 @@ const App = () => {
       <ShowcaseSection />
       <MoreProjects />
       <FeatureCards />
-      <Certifications />
       <Experience />
+      <Certifications />
       <TechStack />
       <Testimonial />
       <Contact />
