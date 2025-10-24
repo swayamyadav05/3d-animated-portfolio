@@ -400,7 +400,7 @@ const expCards = [
 const testimonials = [
   {
     id: "vishnu-sharma",
-    name: "Manager at SkillRank",
+    name: "Director at SkillRank",
     mentions: "@vishnuprasadsharma",
     company: "SkillRank",
     linkedIn:
