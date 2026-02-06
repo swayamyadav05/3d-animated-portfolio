@@ -57,8 +57,7 @@ const Hero = () => {
             </div>
             <div className="text-white-50 md:text-xl relative z-10 pointer-events-none space-y-2">
               <p>
-                Hi, I'm Swayam—a full-stack engineer who thinks like a
-                pentester,
+                Hi, I'm Swayam—a full-stack engineer,
               </p>
               <p>
                 building secure AI-integrated systems with
