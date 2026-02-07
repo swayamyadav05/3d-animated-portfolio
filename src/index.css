@@ -168,7 +168,7 @@ section {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative rounded-xl overflow-hidden;
 
         img {
-          @apply w-full h-full object-center absolute inset-0;
+          @apply w-full h-full object-cover absolute inset-0;
         }
       }
 
@@ -622,4 +622,21 @@ section {
 
 .cert-card:hover {
   box-shadow: 0 10px 30px rgba(229, 229, 229, 0.1);
+}
+
+/* About Section Styles */
+.about-step-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(
+    135deg,
+    #62e0ff 0%,
+    #52aeff 50%,
+    #6d45ce 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.6;
 }

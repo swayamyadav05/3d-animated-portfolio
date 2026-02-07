@@ -340,7 +340,7 @@ const projects = [
     id: 8,
     title: "TLKR",
     category: "Full-Stack",
-    featured: true,
+    featured: false,
     description:
       "Real-time self-destructing chat platform where conversations vanish after 10 minutes",
     longDescription:
@@ -368,34 +368,34 @@ const projects = [
     impact:
       "Enabled private ephemeral conversations with guaranteed data deletion for privacy-conscious users",
   },
-  {
-    id: 9,
-    title: "AdTech Analytics Dashboard",
-    category: "Backend/Cloud",
-    featured: false,
-    description:
-      "ETL pipeline for Amazon Ads API with automated daily ingestion",
-    longDescription:
-      "Built backend infrastructure for ad campaign visualization with AWS Lambda scheduler for automated data fetching.",
-    imgPath: "/images/projectAdTech.png",
-    liveLink: null,
-    githubLink: null,
-    technologies: [
-      "AWS Lambda",
-      "Amazon RDS",
-      "Amazon Ads API",
-      "React",
-      "CloudWatch",
-    ],
-    highlights: [
-      "Automated daily metric ingestion (impressions, clicks)",
-      "RESTful APIs for React dashboard",
-      "Retry logic with CloudWatch alerts",
-      "90% reduction in pipeline failures",
-    ],
-    impact:
-      "Eliminated manual report downloads, improved data freshness to under 5 minutes",
-  },
+  // {
+  //   id: 9,
+  //   title: "AdTech Analytics Dashboard",
+  //   category: "Backend/Cloud",
+  //   featured: false,
+  //   description:
+  //     "ETL pipeline for Amazon Ads API with automated daily ingestion",
+  //   longDescription:
+  //     "Built backend infrastructure for ad campaign visualization with AWS Lambda scheduler for automated data fetching.",
+  //   imgPath: "/images/projectAdTech.png",
+  //   liveLink: null,
+  //   githubLink: null,
+  //   technologies: [
+  //     "AWS Lambda",
+  //     "Amazon RDS",
+  //     "Amazon Ads API",
+  //     "React",
+  //     "CloudWatch",
+  //   ],
+  //   highlights: [
+  //     "Automated daily metric ingestion (impressions, clicks)",
+  //     "RESTful APIs for React dashboard",
+  //     "Retry logic with CloudWatch alerts",
+  //     "90% reduction in pipeline failures",
+  //   ],
+  //   impact:
+  //     "Eliminated manual report downloads, improved data freshness to under 5 minutes",
+  // },
 ];
 
 const techStackIcons = [
@@ -590,6 +590,43 @@ const certifications = [
   },
 ];
 
+const aboutInfo = {
+  intro:
+    "I'm Swayam — a full-stack engineer who builds secure, AI-integrated systems with production-grade architecture. After completing a 6-month internship at SkillRank (ended May 2025), I've spent the last several months building ambitious products independently — including TriggerHive, a full SaaS workflow automation platform, and TLKR, a privacy-first ephemeral chat system.",
+  story: [
+    {
+      heading: "The Spark",
+      text: "My journey started with a question: 'How do hackers break systems?' This curiosity led me to cybersecurity, where I earned Google's Cybersecurity Professional Certificate. But I quickly realized — to break systems effectively, you first need to build them properly. That's when I shifted to development, bringing a security-first mindset to everything I create.",
+    },
+    {
+      heading: "The Grind",
+      text: "Throughout 2024, I went from following tutorials to shipping production applications. During my internship at SkillRank, I built CivicSight AI — an LLM-powered platform processing 100+ government PDFs weekly with 95% accuracy. That project taught me the difference between 'code that works' and 'code that scales.'",
+    },
+    {
+      heading: "Building Forward",
+      text: "Since my internship ended in May 2025, I've been shipping ambitious projects independently. TriggerHive — a production-ready workflow automation platform with visual drag-and-drop builder, multi-provider AI integration (OpenAI, Anthropic, Gemini), webhook triggers with HMAC-SHA256 auth, and event-driven execution via Inngest. And TLKR — a real-time ephemeral chat app where rooms self-destruct in 10 minutes, built with Elysia.js, Upstash Realtime, and zero-persistence architecture.",
+    },
+  ],
+  highlights: [
+    { label: "Based in India", icon: "📍" },
+    { label: "KIIT University — BTech CSE", icon: "🎓" },
+    { label: "Former SDE Intern @ SkillRank", icon: "💼" },
+    { label: "Building: TriggerHive & TLKR", icon: "🚀" },
+    { label: "Google Cybersecurity Certified", icon: "🔒" },
+    { label: "Open-Source Contributor: AGNO", icon: "🤖" },
+    { label: "7+ Professional Certifications", icon: "📚" },
+    { label: "15+ Projects Shipped", icon: "📦" },
+  ],
+  philosophy: [
+    "Build with a penetration tester's paranoia",
+    "Learn from documentation, not just tutorials",
+    "Ship production code, not portfolio pieces",
+    "Communicate clearly in remote-first environments",
+    "Stay curious about the 'why' behind the 'how'",
+  ],
+  cta: "I'm actively seeking full-time opportunities in backend systems, AI integration, or full-stack development. I thrive in environments that value ownership, clear communication, and continuous learning.",
+};
+
 export {
   words,
   heroWords,
@@ -604,6 +641,7 @@ export {
   navLinks,
   projects,
   certifications,
+  aboutInfo,
 };
 
 // const navLinks = [

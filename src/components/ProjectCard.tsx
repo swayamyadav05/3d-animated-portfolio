@@ -28,7 +28,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
         window.open(
           project.liveLink,
           "_blank",
-          "noopener,noreferrer"
+          "noopener,noreferrer",
         );
       }
     };
@@ -37,7 +37,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
       window.open(
         project.githubLink,
         "_blank",
-        "noopener,noreferrer"
+        "noopener,noreferrer",
       );
     };
 
@@ -205,7 +205,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           </p>
 
           {/* Technology preview */}
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1 mt-2">
             {project.technologies.slice(0, 3).map((tech) => (
               <span
                 key={tech}
@@ -217,7 +217,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
         </div>
       </div>
     );
-  }
+  },
 );
 
 ProjectCard.displayName = "ProjectCard";
