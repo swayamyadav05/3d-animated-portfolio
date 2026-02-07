@@ -35,14 +35,14 @@ const ShowcaseSection = () => {
             trigger: card,
             start: "top bottom-=100",
           },
-        }
+        },
       );
     });
 
     gsap.fromTo(
       sectionRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1.5 }
+      { opacity: 1, duration: 1.5 },
     );
   }, []);
 

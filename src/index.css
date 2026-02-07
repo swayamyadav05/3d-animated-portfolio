@@ -168,7 +168,7 @@ section {
         @apply xl:h-[70vh] md:h-[50vh] h-96 relative rounded-xl overflow-hidden;
 
         img {
-          @apply w-full h-full object-cover absolute inset-0;
+          @apply w-full h-full object-center absolute inset-0;
         }
       }
 
@@ -448,7 +448,8 @@ section {
   border: 2px solid transparent;
   background: var(--gradient);
   background-attachment: fixed;
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(
       from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
@@ -497,7 +498,8 @@ section {
   border-radius: 12px;
   border: 2px solid transparent;
   background: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(from 0deg, #ffffff1f 0deg, white, #ffffff00 120deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
@@ -604,7 +606,8 @@ section {
   border-radius: 12px;
   border: 2px solid transparent;
   background: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(from 0deg, #ffffff1f 0deg, white, #ffffff00 120deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
