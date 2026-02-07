@@ -464,7 +464,8 @@ section {
   border: 2px solid transparent;
   background: var(--gradient);
   background-attachment: fixed;
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(
       from calc((var(--start) - 15) * 1deg),
       #ffffff1f 0deg,
@@ -513,7 +514,8 @@ section {
   border-radius: 12px;
   border: 2px solid transparent;
   background: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(from 0deg, #ffffff1f 0deg, white, #ffffff00 120deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
@@ -620,7 +622,8 @@ section {
   border-radius: 12px;
   border: 2px solid transparent;
   background: radial-gradient(circle, #e5e5e5 0%, #fff 100%);
-  mask: linear-gradient(#0000, #0000),
+  mask:
+    linear-gradient(#0000, #0000),
     conic-gradient(from 0deg, #ffffff1f 0deg, white, #ffffff00 120deg);
   mask-composite: intersect;
   mask-clip: padding-box, border-box;
@@ -635,4 +638,21 @@ section {
 
 .cert-card:hover {
   box-shadow: 0 10px 30px rgba(229, 229, 229, 0.1);
+}
+
+/* About Section Styles */
+.about-step-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  background: linear-gradient(
+    135deg,
+    #62e0ff 0%,
+    #52aeff 50%,
+    #6d45ce 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.6;
 }

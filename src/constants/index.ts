@@ -133,6 +133,43 @@ const techStackImgs = [
 const projects = [
   {
     id: 1,
+    title: "TriggerHive",
+    category: "Full-Stack",
+    featured: true,
+    description:
+      "Visual workflow automation platform enabling users to connect APIs, AI models, and services through a drag-and-drop interface",
+    longDescription:
+      "Built a production-ready SaaS workflow automation tool similar to Zapier/n8n. Features a visual canvas editor for creating workflows, event-driven execution engine with topological sorting, multi-provider AI integration, and secure webhook authentication with HMAC-SHA256 signatures.",
+    imgPath: "/images/triggerHiveDemo.gif",
+    liveLink: "https://triggerhive.vercel.app/",
+    githubLink: "https://github.com/swayamyadav05/TriggerHive",
+    technologies: [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma ORM",
+      "tRPC",
+      "React Flow",
+      "Inngest",
+      "Vercel AI SDK",
+      "Tailwind CSS",
+      "Radix UI",
+      "Zod",
+    ],
+    highlights: [
+      "Visual drag-and-drop workflow editor with React Flow and real-time node state management",
+      "Event-driven execution engine using Inngest with topological sorting for DAG dependencies",
+      "Multi-provider AI integration: OpenAI GPT-4, Anthropic Claude, Google Gemini with encrypted credentials",
+      "HMAC-SHA256 webhook authentication with timing-safe signature verification",
+      "End-to-end type safety with tRPC eliminating runtime API errors",
+      "Dynamic variable interpolation between nodes using Handlebars templates",
+    ],
+    impact:
+      "Enables non-technical users to automate complex workflows connecting webhooks, AI models, and messaging services—reducing setup time from hours of custom development to minutes of visual configuration",
+  },
+  {
+    id: 2,
     title: "SecretDrop",
     category: "Full-Stack",
     featured: true,
@@ -163,7 +200,7 @@ const projects = [
       "Created safe channel for unfiltered feedback for creators, educators, and teams",
   },
   {
-    id: 2,
+    id: 3,
     title: "Civic Sight AI",
     category: "AI/Backend",
     featured: true,
@@ -196,7 +233,7 @@ const projects = [
       "Automated tedious manual review process, enabling faster urban planning decisions",
   },
   {
-    id: 3,
+    id: 4,
     title: "Employee Management System",
     category: "Backend",
     featured: true,
@@ -226,7 +263,7 @@ const projects = [
       "Demonstrated ability to architect scalable, secure backend systems from scratch",
   },
   {
-    id: 4,
+    id: 5,
     title: "Neo4j-Expert-Agent",
     category: "AI/Open Source",
     featured: false,
@@ -247,7 +284,7 @@ const projects = [
       "First open-source contribution, now used by AGNO community",
   },
   {
-    id: 5,
+    id: 6,
     title: "FilmFiesta",
     category: "Full-Stack",
     featured: false,
@@ -274,7 +311,7 @@ const projects = [
       "First full-stack application built during learning journey",
   },
   {
-    id: 6,
+    id: 7,
     title: "Face Recognition Door Lock",
     category: "IoT/Security",
     featured: false,
@@ -299,8 +336,40 @@ const projects = [
     ],
     impact: "Practical application of ML in IoT security context",
   },
+  {
+    id: 8,
+    title: "TLKR",
+    category: "Full-Stack",
+    featured: false,
+    description:
+      "Real-time self-destructing chat platform where conversations vanish after 10 minutes",
+    longDescription:
+      "Built a privacy-first ephemeral chat application where users create temporary rooms that auto-expire. Features real-time WebSocket messaging, token-based authentication, anonymous identity generation, and zero data persistence architecture.",
+    imgPath: "/images/projectTLKR.png",
+    liveLink: "https://tlkr.onepieceweb.tech/",
+    githubLink: "https://github.com/swayamyadav05/TLKR",
+    technologies: [
+      "Next.js 16",
+      "Elysia.js",
+      "TypeScript",
+      "React 19",
+      "Upstash Redis",
+      "Upstash Realtime",
+      "TanStack Query",
+      "Tailwind CSS 4",
+      "Zod",
+    ],
+    highlights: [
+      "Real-time bidirectional messaging via WebSocket connections",
+      "Auto-expiring rooms with Redis TTL (10-minute lifespan)",
+      "Token-based auth with HTTP-only cookies and 2-user room capacity",
+      "End-to-end type safety with Elysia + Eden Treaty + Zod schemas",
+    ],
+    impact:
+      "Enabled private ephemeral conversations with guaranteed data deletion for privacy-conscious users",
+  },
   // {
-  //   id: 7,
+  //   id: 9,
   //   title: "AdTech Analytics Dashboard",
   //   category: "Backend/Cloud",
   //   featured: false,
@@ -308,7 +377,7 @@ const projects = [
   //     "ETL pipeline for Amazon Ads API with automated daily ingestion",
   //   longDescription:
   //     "Built backend infrastructure for ad campaign visualization with AWS Lambda scheduler for automated data fetching.",
-  //   imgPath: "/images/project3.png",
+  //   imgPath: "/images/projectAdTech.png",
   //   liveLink: null,
   //   githubLink: null,
   //   technologies: [
@@ -400,7 +469,7 @@ const expCards = [
 const testimonials = [
   {
     id: "vishnu-sharma",
-    name: "Manager at SkillRank",
+    name: "Director at SkillRank",
     mentions: "@vishnuprasadsharma",
     company: "SkillRank",
     linkedIn:
@@ -547,6 +616,41 @@ const aboutMe = {
     "Currently seeking remote opportunities where I can contribute to products that matter, work with modern tech stacks, and continue learning at the intersection of development and security.",
   location: "Bhairahawa, Nepal",
   availability: "Open to remote opportunities worldwide",
+const aboutInfo = {
+  intro:
+    "I'm Swayam — a full-stack engineer who builds secure, AI-integrated systems with production-grade architecture. After completing a 6-month internship at SkillRank (ended May 2025), I've spent the last several months building ambitious products independently — including TriggerHive, a full SaaS workflow automation platform, and TLKR, a privacy-first ephemeral chat system.",
+  story: [
+    {
+      heading: "The Spark",
+      text: "My journey started with a question: 'How do hackers break systems?' This curiosity led me to cybersecurity, where I earned Google's Cybersecurity Professional Certificate. But I quickly realized — to break systems effectively, you first need to build them properly. That's when I shifted to development, bringing a security-first mindset to everything I create.",
+    },
+    {
+      heading: "The Grind",
+      text: "Throughout 2024, I went from following tutorials to shipping production applications. During my internship at SkillRank, I built CivicSight AI — an LLM-powered platform processing 100+ government PDFs weekly with 95% accuracy. That project taught me the difference between 'code that works' and 'code that scales.'",
+    },
+    {
+      heading: "Building Forward",
+      text: "Since my internship ended in May 2025, I've been shipping ambitious projects independently. TriggerHive — a production-ready workflow automation platform with visual drag-and-drop builder, multi-provider AI integration (OpenAI, Anthropic, Gemini), webhook triggers with HMAC-SHA256 auth, and event-driven execution via Inngest. And TLKR — a real-time ephemeral chat app where rooms self-destruct in 10 minutes, built with Elysia.js, Upstash Realtime, and zero-persistence architecture.",
+    },
+  ],
+  highlights: [
+    { label: "Based in India", icon: "📍" },
+    { label: "KIIT University — BTech CSE", icon: "🎓" },
+    { label: "Former SDE Intern @ SkillRank", icon: "💼" },
+    { label: "Building: TriggerHive & TLKR", icon: "🚀" },
+    { label: "Google Cybersecurity Certified", icon: "🔒" },
+    { label: "Open-Source Contributor: AGNO", icon: "🤖" },
+    { label: "7+ Professional Certifications", icon: "📚" },
+    { label: "15+ Projects Shipped", icon: "📦" },
+  ],
+  philosophy: [
+    "Build with a penetration tester's paranoia",
+    "Learn from documentation, not just tutorials",
+    "Ship production code, not portfolio pieces",
+    "Communicate clearly in remote-first environments",
+    "Stay curious about the 'why' behind the 'how'",
+  ],
+  cta: "I'm actively seeking full-time opportunities in backend systems, AI integration, or full-stack development. I thrive in environments that value ownership, clear communication, and continuous learning.",
 };
 
 export {
@@ -564,6 +668,7 @@ export {
   projects,
   certifications,
   aboutMe,
+  aboutInfo,
 };
 
 // const navLinks = [

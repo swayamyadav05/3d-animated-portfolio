@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import { forwardRef } from "react";
 
 interface Project {
   id: number;
@@ -28,7 +28,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
         window.open(
           project.liveLink,
           "_blank",
-          "noopener,noreferrer"
+          "noopener,noreferrer",
         );
       }
     };
@@ -37,7 +37,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
       window.open(
         project.githubLink,
         "_blank",
-        "noopener,noreferrer"
+        "noopener,noreferrer",
       );
     };
 
@@ -54,11 +54,11 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
             />
 
             {/* Overlay with links */}
-            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 [&:not(:hover)]:pointer-events-none">
+            <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4 pointer-events-none">
               {project.liveLink && (
                 <button
                   onClick={handleLiveClick}
-                  className="px-6 py-3 bg-white text-black font-semibold rounded-lg transition-all duration-300 hover:bg-white-50 hover:text-white flex items-center gap-2">
+                  className="px-6 py-3 bg-white text-black font-semibold rounded-lg transition-all duration-300 hover:bg-white-50 hover:text-white flex items-center gap-2 pointer-events-auto">
                   <img
                     src="/images/arrow-right.svg"
                     alt="Live"
@@ -69,7 +69,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
               )}
               <button
                 onClick={handleGithubClick}
-                className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg transition-all duration-300 hover:bg-white hover:text-black flex items-center gap-2">
+                className="px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg transition-all duration-300 hover:bg-white hover:text-black flex items-center gap-2 pointer-events-auto">
                 <svg
                   className="w-4 h-4"
                   fill="currentColor"
@@ -162,11 +162,11 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           />
 
           {/* Overlay for side cards */}
-          <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3">
+          <div className="absolute inset-0 bg-black/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-3 pointer-events-none">
             {project.liveLink && (
               <button
                 onClick={handleLiveClick}
-                className="p-3 bg-white text-black rounded-full transition-all duration-300 hover:bg-white-50"
+                className="p-3 bg-white text-black rounded-full transition-all duration-300 hover:bg-white-50 pointer-events-auto"
                 title="Live Demo">
                 <img
                   src="/images/arrow-right.svg"
@@ -177,7 +177,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
             )}
             <button
               onClick={handleGithubClick}
-              className="p-3 bg-transparent border-2 border-white text-white rounded-full transition-all duration-300 hover:bg-white hover:text-black"
+              className="p-3 bg-transparent border-2 border-white text-white rounded-full transition-all duration-300 hover:bg-white hover:text-black pointer-events-auto"
               title="View Code">
               <svg
                 className="w-4 h-4"
@@ -205,7 +205,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
           </p>
 
           {/* Technology preview */}
-          <div className="flex flex-wrap gap-1">
+          <div className="flex flex-wrap gap-1 mt-2">
             {project.technologies.slice(0, 3).map((tech) => (
               <span
                 key={tech}
@@ -217,7 +217,7 @@ const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(
         </div>
       </div>
     );
-  }
+  },
 );
 
 ProjectCard.displayName = "ProjectCard";
