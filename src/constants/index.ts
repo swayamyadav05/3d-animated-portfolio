@@ -590,32 +590,34 @@ const certifications = [
   },
 ];
 
-const aboutMe = {
-  shortBio:
-    "Full-Stack Engineer building secure, AI-integrated systems for production environments. From LLM orchestration to scalable backends, I ship solutions that work.",
-  longBioStarter:
-    'I discovered my path to software engineering through a simple insight: "The future is data.',
-  journey: `
-  That observation, shared by my brother when I was in 8th grade, planted a seed that grew into a deep
-  fascination with how systems work—and how they can be broken and rebuilt better.
+// const aboutMe = {
+//   shortBio:
+//     "Full-Stack Engineer building secure, AI-integrated systems for production environments. From LLM orchestration to scalable backends, I ship solutions that work.",
+//   longBioStarter:
+//     'I discovered my path to software engineering through a simple insight: "The future is data.',
+//   journey: `
+//   That observation, shared by my brother when I was in 8th grade, planted a seed that grew into a deep
+//   fascination with how systems work—and how they can be broken and rebuilt better.
+//
+//   My journey hasn't been linear. I started with cybersecurity, drawn to the challenge of thinking like
+//   an attacker. But I realized that to break systems effectively, I first needed to understand how to
+//   build them properly. This led me to full-stack development, where I discovered I loved creating
+//   solutions as much as I enjoyed analyzing their vulnerabilities.
+//
+//   During my internship at SkillRank, I worked on government technology platforms processing sensitive
+//   urban planning documents. I learned to build with security-first thinking—not as an afterthought,
+//   but as a foundation. I experimented with cutting-edge AI frameworks, contributed tools that made it
+//   into open-source projects, and delivered architecture that influenced decisions for 100,000+ line codebases.
+//
+//   Today, I build full-stack applications that blend intelligent automation (LLMs, AI agents) with robust,
+//   scalable architecture. My code is informed by a penetration tester's mindset: I think about edge cases,
+//   validate rigorously, and design systems that fail gracefully.`,
+//   currentFocus:
+//     "Currently seeking remote opportunities where I can contribute to products that matter, work with modern tech stacks, and continue learning at the intersection of development and security.",
+//   location: "Bhairahawa, Nepal",
+//   availability: "Open to remote opportunities worldwide",
+// };
 
-  My journey hasn't been linear. I started with cybersecurity, drawn to the challenge of thinking like
-  an attacker. But I realized that to break systems effectively, I first needed to understand how to
-  build them properly. This led me to full-stack development, where I discovered I loved creating
-  solutions as much as I enjoyed analyzing their vulnerabilities.
-
-  During my internship at SkillRank, I worked on government technology platforms processing sensitive
-  urban planning documents. I learned to build with security-first thinking—not as an afterthought,
-  but as a foundation. I experimented with cutting-edge AI frameworks, contributed tools that made it
-  into open-source projects, and delivered architecture that influenced decisions for 100,000+ line codebases.
-
-  Today, I build full-stack applications that blend intelligent automation (LLMs, AI agents) with robust,
-  scalable architecture. My code is informed by a penetration tester's mindset: I think about edge cases,
-  validate rigorously, and design systems that fail gracefully.`,
-  currentFocus:
-    "Currently seeking remote opportunities where I can contribute to products that matter, work with modern tech stacks, and continue learning at the intersection of development and security.",
-  location: "Bhairahawa, Nepal",
-  availability: "Open to remote opportunities worldwide",
 const aboutInfo = {
   intro:
     "I'm Swayam — a full-stack engineer who builds secure, AI-integrated systems with production-grade architecture. After completing a 6-month internship at SkillRank (ended May 2025), I've spent the last several months building ambitious products independently — including TriggerHive, a full SaaS workflow automation platform, and TLKR, a privacy-first ephemeral chat system.",
@@ -667,7 +669,6 @@ export {
   navLinks,
   projects,
   certifications,
-  aboutMe,
   aboutInfo,
 };
 
